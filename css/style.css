@@ -169,6 +169,7 @@ header a {
 }
 
 @media (orientation: landscape) and (min-width: 640px) {
+
   header h1 {
     font-size: 24px;
   }
@@ -180,6 +181,31 @@ header a {
   header button {
     font-size: 16px;
     line-height: 40px
+  }
+}
+
+@media (orientation: portrait) and (min-width: 640px) {
+  header .wrapper {
+    top: 50px;
+    left: 350px;
+    transform: translateX(-50%);
+  }
+
+  header h1 {
+    font-size: 34px;
+  }
+
+  header h2 {
+    font-size: 34px;
+  }
+
+  header button {
+    font-size: 26px;
+    line-height: 50px
+  }
+
+  header img {
+    right: -50px;
   }
 }
 
@@ -209,9 +235,13 @@ header a {
     line-height: 60px
   }
 
+  header .wrapper {
+    left: 100px;
+  }
+
   header img {
     right: 0;
-    height: 85%;
+    height: 70%;
   }
 }
 
