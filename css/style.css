@@ -22,11 +22,13 @@ font-family: 'Saira Condensed', sans-serif;
 header {
   position: relative;
   background-image: url(../images/matrix-g28d9d5171_1280.jpg);
-  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
   max-width: 1920px;
   margin: 0 auto;
   overflow: hidden;
-  /*  bez overflow: hidden zdjęcie wychodzi poza układ i rozwala stronę*/
+  overflow: hidden
 }
 
 header img {
@@ -38,6 +40,12 @@ header img {
 
 header>* {
   position: absolute;
+}
+
+header .wrapper {
+  position: absolute;
+  top: 50vh;
+  transform: translateY(-50vh);
 }
 
 header div.welcome {
@@ -202,7 +210,7 @@ header a {
   }
 
   header img {
-    right: -21%;
+    right: 0;
     height: 85%;
   }
 }
@@ -490,7 +498,7 @@ header a {
   }
 
   .portfolio .project:nth-of-type(even) .about p {
-    /*    padding-right: 20px*/
+    padding-right: 20px
   }
 
   .portfolio .project:nth-of-type(even) .about h2 {
